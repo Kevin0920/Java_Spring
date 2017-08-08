@@ -1,0 +1,5 @@
+package com.codingdojo.controllerspractice.controllers;
+
+public class HomeController {
+
+}

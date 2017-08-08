@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/app.js"></script>
+        <style>
+        		h1{
+        			margin-top: 50px;
+        			text-align: center;
+ 
+        		}
+        		h2{
+        			text-align: center;
+ 
+        		}
+        </style>
+</head>
+<body>
+        <h1>Hi, I'm Kevin</h1>
+        <h2>Welcome to my portfolio</h2>
+</body>
+</html>

@@ -1,0 +1,9 @@
+package com.codingdojo.controllers.controllers;
+
+@RestController
+public class Portfolio {
+	 @RequestMapping("/")
+     public String home() {
+             return "Hello World!";
+     }
+}

@@ -1,0 +1,18 @@
+package com.codingdojo.controllers.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class Portfolio {
+	 @RequestMapping("/")
+     public String home() {
+		 return "index.html";
+     }
+	 
+	 @RequestMapping("/me")
+	 public String info() {
+		 return "info.html";
+	 }
+	 
+}

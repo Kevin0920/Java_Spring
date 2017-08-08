@@ -1,0 +1,18 @@
+package com.codingdojo.displaydate.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class Date {
+	
+	@RequestMapping("/dateShow")
+	public String date(Model model) {
+		java.util.Date now = new java.util.Date();
+		model.addAttribute("now", now);
+		return "date.jsp";
+	}
+	
+
+}

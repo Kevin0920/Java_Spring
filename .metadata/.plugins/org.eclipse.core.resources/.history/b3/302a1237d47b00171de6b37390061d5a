@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/app.js"></script>
+        <style>
+        		h1{
+        			margin-top: 50px;
+        			text-align: center;
+ 
+        		}
+        		h2{
+        			text-align: center;
+ 
+        		}
+        		.aboutCon {
+        			border-style: solid;
+        			display: inline-block;
+        		}
+        		.
+        </style>
+</head>
+<body>
+        <h1>Hi, I'm Kevin</h1>
+        <h2>Welcome to my portfolio</h2>
+       <div class="aboutCon">
+       	 <a href="/me">About me</a>
+        	<P>A little about my backgroun and why I do what I do</p>
+       </div>
+        
+        <div class="proCon">
+       	 <a href="/projects">Projects</a>
+        	<P>Showcasing my projects</p>
+       </div>
+        
+</body>
+</html>

@@ -1,0 +1,8 @@
+INDEX VERSION 1.130+/Users/lingsike/iCloud Drive (Archive) - 1/Documents/codingdojo/java/Java-Spring/.metadata/.plugins/org.eclipse.jdt.core
+3448240401.index
+1230485200.index
+1549060936.index
+3604710232.index
+2738824068.index
+882576906.index
+1254192479.index
