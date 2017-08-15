@@ -11,8 +11,8 @@
 <body>
 	<h1><c:out value="${person.firstName}" /> <c:out value="${person.lastName}" /> </h1>
 	
-	<h3>License: <c:out value="${foundLicense.number}" /></h3>
-	<h3>State: <c:out value="${foundLicense.state}" /></h3>
+	<h3>License: <c:out value="${person.license.number}" /></h3>
+	<h3>State: <c:out value="${person.license.state}" /></h3>
 
 
 </body>

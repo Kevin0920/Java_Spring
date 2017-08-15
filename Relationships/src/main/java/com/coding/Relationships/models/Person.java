@@ -9,6 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+
+
 @Entity
 @Table(name="persons")
 public class Person {
@@ -18,9 +20,10 @@ public class Person {
 	 private Long id;
 	 private String firstName;
 	 private String lastName;
+	
 	 private Date createdAt;
 	 private Date updatedAt;
-	 
+	
 	 @OneToOne(mappedBy="person", fetch=FetchType.LAZY)
 	 private License license;
 	 

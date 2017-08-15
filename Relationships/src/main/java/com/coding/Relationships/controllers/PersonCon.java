@@ -30,12 +30,12 @@ public class PersonCon {
 		return "index";
 	}
 	
-	@RequestMapping(value="/persons/new")
+	@RequestMapping("/persons/new")
 	public String addPerson(@ModelAttribute("person") Person person) {
 		return "addPerson";
 	}
 	
-	@PostMapping(value="/persons/new")
+	@PostMapping("/persons/new")
 	public String createPerson(@Valid @ModelAttribute("person") Person person, BindingResult result) {
 		if(result.hasErrors()) {
 			return "addPerson";
@@ -46,7 +46,7 @@ public class PersonCon {
 	}
 	
 	
-	@RequestMapping(value="/persons/{id}")
+	@RequestMapping("/persons/{id}")
 	public String personDetails(@PathVariable("id")Long id, Model model) {
 		model.addAttribute("person", personService.findPerson(id));
 		

@@ -3,16 +3,21 @@ package com.coding.Relationships.models;
 import java.util.Date;
 
 import javax.persistence.CascadeType;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
-
 import org.springframework.format.annotation.DateTimeFormat;
+
+
+
 
 @Entity
 @Table(name="licenses")
@@ -21,10 +26,10 @@ public class License {
 	 @Id
 	 @GeneratedValue
 	 private Long id;
-	 @DateTimeFormat(pattern = "dd/MM/yyyy")
 
-	 
+
 	 private String number;
+	 @DateTimeFormat(pattern = "yyyy-MM-dd")
 	 private Date expiration_date;
 	 private String state;
 	 private Date createdAt;
@@ -37,6 +42,17 @@ public class License {
 	 public License() {
 	     
 	 }
+	 
+	 @PrePersist
+	  void createdAt() {
+	    this.createdAt = new Date();
+	  }
+
+	  @PreUpdate
+	  void updatedAt() {
+	    this.updatedAt = new Date();
+	  }
+	 
 	 
 	 public License(String number, Person person) {
 	     this.number = number;
